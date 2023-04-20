@@ -52,7 +52,7 @@ python3 cs_laf_evaluation .py
 
 If no command-line arguments for `args['architecture']` and `args['VALSET']` selected then defaults options in `cs_laf_evaluation .py` will be used.
 
-** Reproducing the results **
+**Reproducing the results**
 
 The weights after training the network using Cityscapes and relabeled LostAndFound datasets can be downloaded [here]() to reproduce the same results for each individual tasks.
 
