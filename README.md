@@ -18,4 +18,5 @@ This code is built and tested with **[Python 3.8.10](https://www.python.org/down
   pip install requirements.txt
 ````
 
-**Data preprocessing:** In ` preparation/prepare_lost_and_found.py` script can be used to generate binary mask of LostAndFound dataset serving as OoD proxy data.
+**Data preprocessing:** The Dataloader used in this repo assumes that the *labelTrainId* images for Cityscapes dataset are already generated according to [official Cityscapes script](https://github.com/mcordts/cityscapesScripts/blob/master/cityscapesscripts/preparation/createTrainIdLabelImgs.py).
+The script in ` preparation/prepare_lost_and_found.py` can be used to generate binary mask of LostAndFound dataset serving as OoD proxy data.
