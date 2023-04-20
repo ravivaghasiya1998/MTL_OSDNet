@@ -21,7 +21,7 @@ The script in ` preparation/prepare_lost_and_found.py` can be used to generate b
 Regarding the semantic relabeling of the LostAndFound dataset, please use the DeepLabv3+ network and pre-trained weights from https://github.com/NVIDIA/semantic-segmentation/tree/sdcnet and run the inference on LostAndFound left RGB images. After getting predicted semantic labels, the script in ` preparation/relabel_predicted_lost_and_found.py ` can be used to manually assign the unique *labelTrainId* to OoD pixels  which are classified as one of the 19 classes of Cityscapes. Please keep in mind to change the file names and directory path according to your setup. One can download the relabeled LostAndFound dataset directly [here](https://www.dropbox.com/scl/fo/8bqjlqrrgqzkb4ha3zhwc/h?dl=0&rlkey=yavgb62gwhxo233qllpna5ffa)
 
 ## Implementation ##
-Modify the settings in ` condig.py `. All the files will be saved in directory defined via `io_root`. Don't forget to change the root directory of all datasets. Then to train the network, please run:
+Modify the settings in ` config.py `. All the files will be saved in directory defined via `io_root`. Don't forget to change the root directory of all datasets. Then to train the network, please run:
 
 ```
 python3 cs_laf_predict_multitask_training .py
