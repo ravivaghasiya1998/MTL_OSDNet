@@ -364,7 +364,6 @@ def main(args):
     """Perform_training"""
     args['architecture'] = 'shared_decoder'
     #args['weighting_method'] = 'uw'
-    args['weighting_method'] = 'dwa'
     config = config_training_setup(args)
     training_routine(config)
 
