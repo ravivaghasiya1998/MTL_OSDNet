@@ -13,7 +13,95 @@ This code is built and tested with **[Python 3.8.10](https://www.python.org/down
 ```
   pip install requirements.txt
 ````
-
+``` 
+── disparity
+│   ├── test
+│   │   ├── berlin
+│   │   ├── bielefeld
+│   │   ├── bonn
+│   │   ├── leverkusen
+│   │   ├── mainz
+│   │   └── munich
+│   ├── train
+│   │   ├── aachen
+│   │   ├── bochum
+│   │   ├── bremen
+│   │   ├── cologne
+│   │   ├── darmstadt
+│   │   ├── dusseldorf
+│   │   ├── erfurt
+│   │   ├── hamburg
+│   │   ├── hanover
+│   │   ├── jena
+│   │   ├── krefeld
+│   │   ├── monchengladbach
+│   │   ├── strasbourg
+│   │   ├── stuttgart
+│   │   ├── tubingen
+│   │   ├── ulm
+│   │   ├── weimar
+│   │   └── zurich
+│   └── val
+│       ├── frankfurt
+│       ├── lindau
+│       └── munster
+├── gtFine
+│   ├── test
+│   │   ├── berlin
+│   │   ├── bielefeld
+│   │   ├── bonn
+│   │   ├── leverkusen
+│   │   ├── mainz
+│   │   └── munich
+│   ├── train
+│   │   ├── aachen
+│   │   ├── bochum
+│   │   ├── bremen
+│   │   ├── cologne
+│   │   ├── darmstadt
+│   │   ├── dusseldorf
+│   │   ├── erfurt
+│   │   ├── hamburg
+│   │   ├── hanover
+│   │   ├── jena
+│   │   ├── krefeld
+│   │   ├── monchengladbach
+│   │   ├── strasbourg
+│   │   ├── stuttgart
+│   │   ├── tubingen
+│   │   ├── ulm
+│   │   ├── weimar
+│   │   └── zurich
+│   └── val
+│       ├── frankfurt
+│       ├── lindau
+│       └── munster
+├── leftImg8bit
+│   ├── train
+│   │   ├── aachen
+│   │   ├── bochum
+│   │   ├── bremen
+│   │   ├── cologne
+│   │   ├── darmstadt
+│   │   ├── dusseldorf
+│   │   ├── erfurt
+│   │   ├── hamburg
+│   │   ├── hanover
+│   │   ├── jena
+│   │   ├── krefeld
+│   │   ├── monchengladbach
+│   │   ├── strasbourg
+│   │   ├── stuttgart
+│   │   ├── tubingen
+│   │   ├── ulm
+│   │   ├── weimar
+│   │   └── zurich
+│   └── val
+│       ├── frankfurt
+│       ├── lindau
+│       └── munster
+└── weights
+``` 
 **Data preprocessing:** The Dataloader used in this repo assumes that the *labelTrainId* images for Cityscapes dataset are already generated according to [official Cityscapes script](https://github.com/mcordts/cityscapesScripts/blob/master/cityscapesscripts/preparation/createTrainIdLabelImgs.py).
 
 The script in ` preparation/prepare_lost_and_found.py` can be used to generate binary mask of LostAndFound dataset serving as OoD proxy data.
