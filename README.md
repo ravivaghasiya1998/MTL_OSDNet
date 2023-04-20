@@ -18,4 +18,4 @@ This code is built and tested with **[Python 3.8.10](https://www.python.org/down
   pip install requirements.txt
 ````
 
-**Data preprocessing:** In ```  preparation/prepare_lost_and_found.py```` script can be used to generate binary mask of LostAndFound dataset serving as OoD proxy data.
+**Data preprocessing:** In `#preparation/prepare_lost_and_found.py` script can be used to generate binary mask of LostAndFound dataset serving as OoD proxy data.
