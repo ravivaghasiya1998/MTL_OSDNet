@@ -27,5 +27,12 @@ Modify the settings in ` config.py `. All the files will be saved in directory d
 python3 cs_laf_predict_multitask_training .py
 ````
 
-If no command-line arguments are provided to select particular versions of network as well as particular task-weighting methods then the default areguments in `config.py` and `cs_laf_predict_multitask_training .py` will be applied.
+If no command-line arguments are provided to select particular versions of network as well as particular task-weighting methods (i.e. `args['architecture']` and ` args['weighting_method']`) then the default areguments in `config.py` and `cs_laf_predict_multitask_training .py` will be applied.
 
+To evaluate the network for particular epoch, change the settings in `config.py' as well as select arguments for dataset on which you want to evalate the model. Then run:
+
+```
+python3 cs_laf_evaluation .py
+````
+
+If no command-line arguments for `args['architecture']` and `args['VALSET']` selected then defaults arguments in `cs_laf_evaluation .py` will be used.
