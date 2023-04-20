@@ -14,6 +14,6 @@ Download relabeled LostAndFound dataset [here](https://www.dropbox.com/scl/fo/8b
 
 This code is built and tested with **[Python 3.8.10](https://www.python.org/downloads/release/python-3810/)** and **[CUDA 11.2](https://developer.nvidia.com/cuda-11.2.0-download-archive)**. The required dependencies were installed via **pip 20.0.2**. Please install the required libraries via:
 
-'''
+```
   pip install requirements.txt
-'''
+````
