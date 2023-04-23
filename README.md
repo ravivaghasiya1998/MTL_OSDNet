@@ -56,6 +56,6 @@ If no command-line arguments for `args['architecture']` and `args['VALSET']` sel
 
 **Reproducing the results**
 
-The weights after training the network using Cityscapes and relabeled LostAndFound datasets can be downloaded [here](https://www.dropbox.com/s/ep7u83ssdordum8/DeepLabV3%2B_WideResNet38_relabeling_approach.pth?dl=0) to reproduce the same results for each individual tasks.
+The weights after training the network using Cityscapes and relabeled LostAndFound datasets can be downloaded [here]([https://www.dropbox.com/s/ep7u83ssdordum8/DeepLabV3%2B_WideResNet38_relabeling_approach.pth?dl=0](https://drive.google.com/file/d/1aQKuzJZLDaTnr7I1vD9JdOLR5j23vej_/view?usp=share_link)) to reproduce the same results for each individual tasks.
 
 To perform the training for Single-Task Learning approach, the scripts provided in `single_task`can be used and updated according to task that needs to be performed.
