@@ -14,9 +14,10 @@ This code is built and tested with **[Python 3.8.10](https://www.python.org/down
 
 **Data preprocessing:** The Dataloader used in this repo assumes that the *labelTrainId* images for Cityscapes dataset are already generated according to [official Cityscapes script](https://github.com/mcordts/cityscapesScripts/blob/master/cityscapesscripts/preparation/createTrainIdLabelImgs.py).
 
-The script in ` preparation/prepare_lost_and_found.py` can be used to generate binary mask of LostAndFound dataset serving as OoD proxy data.
 
-Regarding the semantic relabeling of the LostAndFound dataset, please use the DeepLabv3+ network and pre-trained weights from https://github.com/NVIDIA/semantic-segmentation/tree/sdcnet and run the inference on LostAndFound left RGB images. After getting predicted semantic labels, the script in ` preparation/relabel_predicted_lost_and_found.py ` can be used to manually assign the unique *labelTrainId* to OoD pixels  which are classified as one of the 19 classes of Cityscapes. Please keep in mind to change the file names and directory path according to your setup. One can download the relabeled LostAndFound dataset directly [here](https://www.dropbox.com/scl/fo/8bqjlqrrgqzkb4ha3zhwc/h?dl=0&rlkey=yavgb62gwhxo233qllpna5ffa)
+In a baseline approach the Cityscapes and the LostAndFound datasets were used to train the model. The script in ` preparation/prepare_lost_and_found.py` can be used to generate binary mask of LostAndFound dataset serving as OoD proxy data.
+
+Regarding the semantic relabeling of the LostAndFound dataset, please use the DeepLabv3+ network and pre-trained weights from https://github.com/NVIDIA/semantic-segmentation/tree/sdcnet and run the inference on LostAndFound left RGB images. After getting predicted semantic labels, the script in ` preparation/relabel_predicted_lost_and_found.py ` can be used to manually assign the unique *labelTrainId* to OoD pixels  which are classified as one of the 19 classes of Cityscapes. Please keep in mind to change the file names and directory path according to your setup. One can download the relabeled LostAndFound dataset directly [here](https://www.dropbox.com/scl/fo/8bqjlqrrgqzkb4ha3zhwc/h?dl=0&rlkey=yavgb62gwhxo233qllpna5ffa). The Cityscapes and the relabeled LostAndFound data were used to train the same network. 
 
 After data preprocessing, please make sure to have following directory structure for datasets
 ``` 
